@@ -11,7 +11,7 @@ jobs:
   Build:
     runs-on: ubuntu-latest
      steps:
-      - name: Checkout Repo
+       - name: Checkout Repo
         uses: actions/checkout@v2
 
       - name: Setup Python
@@ -22,7 +22,7 @@ jobs:
       - name: Install Requirements
         run:  pip install flask
               
-       - name: Unit Test
+        - name: Unit Test
           run: python -m unittest -v test
 
       - name: SonarCloud Scan
